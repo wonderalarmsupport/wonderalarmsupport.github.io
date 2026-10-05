@@ -1,57 +1,35 @@
 <h2><strong>Privacy Policy</strong></h2>
-<p>This privacy policy applies to the Wonder Alarm app for mobile devices, together with</p>
-<p>any related services operated by AlphaMu Studios (collectively, the "Application").</p>
-<p>AlphaMu Studios is hereby referred to as the "Service Provider".</p>
+<p>This privacy policy applies to the Wonder Alarm app for mobile devices, together with any related services operated by AlphaMu Studios (collectively, the "Application"). AlphaMu Studios is hereby referred to as the "Service Provider".</p>
 <br>
 <h3><strong>Information Collection and Use</strong></h3>
-<p>The Application does not directly collect personal data. However, information may be</p>
-<p>collected automatically through third-party services when you download and use the</p>
-<p>Application.</p>
+<p>The Application does not directly collect personal data. However, information may be collected automatically through third-party services when you download and use the Application.</p>
+<p>Your alarms, custom labels, custom alarm sounds, sleep logs, and water and stretch tracking data are stored only locally on your device and are never transmitted to the Service Provider or to any third party.</p>
 <ul>
   <li>Your device's Internet Protocol address</li>
   <li>Device identifiers (such as Advertising ID)</li>
-  <li>The pages of the Application that you visit, the time and date of your visit,</li>
-</ul>
-<p>the time spent on those pages</p>
-<ul>
+  <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
   <li>The time spent on the Application</li>
   <li>Application crash logs, non-fatal error messages and performance analytics</li>
   <li>Your mobile operating system you use</li>
 </ul>
-<p>The Application does not directly collect personally identifiable information such</p>
-<p>as your name, email address, or phone number. However, it processes device-related</p>
-<p>identifiers and usage data through third-party services for analytics, advertising,</p>
-<p>and crash reporting purposes.</p>
+<p>The Application does not directly collect personally identifiable information such as your name, email address, or phone number. However, it processes device-related identifiers and usage data through third-party services for analytics, advertising, and crash reporting purposes.</p>
+<p>The Application also allows you to select a city, a base currency, and an in-app display language. To provide weather, currency, and news content, the city name, currency code, and your selected app language are sent to the Service Provider's own backend service. For news specifically, your device's region and system language — detected automatically from your device settings, not separately selected within the app — are also sent, so that region-appropriate headlines can be retrieved. In every case, only these necessary values are forwarded — never any personally identifiable information — to third-party weather, currency, and news data providers in order to retrieve and display this content. News thumbnail images, when available, are loaded directly from the original publisher's own servers, which is standard practice for news and RSS readers; this means your device connects directly to that publisher when displaying such an image.</p>
+<p>The Service Provider's own backend service also necessarily receives your device's IP address with every request, which it uses briefly and only in a cryptographically hashed (non-reversible) form to apply rate limiting and protect the service against abuse; this record is automatically deleted within a few minutes. The city name you enter is processed the same way: it is stored on the backend only as a cryptographically hashed (non-reversible) cache key, used solely to avoid repeating the same request to the third-party weather provider, and is never stored in a form that could be read back as the city you typed.</p>
 <br>
 <h3><strong>Device Permissions Required</strong></h3>
-<p>To function properly as a reliable alarm clock, the Application requires the following</p>
-<p>system permissions. The Service Provider only uses these permissions to provide the</p>
-<p>core functionality of the app, and no personal data from them is ever collected, stored,</p>
-<p>or transmitted:</p>
+<p>To function properly as a reliable alarm clock, the Application requires the following system permissions. The Service Provider only uses these permissions to provide the core functionality of the app, and no personal data from them is ever collected, stored, or transmitted:</p>
 <ul>
-  <li>Exact Alarm (SCHEDULE_EXACT_ALARM): Required to trigger your alarms precisely at the</li>
+  <li>Exact Alarm (SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM): Required to trigger your alarms precisely at the exact second you have set them.</li>
+  <li>Notification Permission: Required to display the active alarm status in your status bar and to trigger alerts.</li>
+  <li>Battery Optimization Settings: The app opens the system's battery optimization list so you can manually exclude it, preventing the Android OS from putting the app to sleep and ensuring that your alarms will ring reliably even if the device is in deep sleep.</li>
+  <li>System Alert Window / Draw Over Other Apps: Required to display the full-screen alarm dismiss interface over your lock screen or other running Applications when an alarm goes off, and to display the bedtime reminder popup at your configured bedtime.</li>
+  <li>Full-Screen Intent (USE_FULL_SCREEN_INTENT): Required to launch the alarm-ringing screen directly over your lock screen when an alarm fires, so you see it immediately instead of only a notification.</li>
+  <li>Foreground Service (FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK): Required to keep the alarm sound playing reliably in the background while the alarm is ringing.</li>
+  <li>Receive Boot Completed (RECEIVE_BOOT_COMPLETED): Required to automatically re-schedule your alarms after your device restarts, so they continue to work without you needing to reopen the app.</li>
 </ul>
-<p>exact second you have set them.</p>
-<ul>
-  <li>Notification Permission: Required to display the active alarm status in your status bar</li>
-</ul>
-<p>and to trigger alerts.</p>
-<ul>
-  <li>Battery Optimization Bypass (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS): Required to prevent</li>
-</ul>
-<p>the Android OS from putting the app to sleep, ensuring that your alarms will ring reliably</p>
-<p>even if the device is in deep sleep.</p>
-<ul>
-  <li>System Alert Window / Draw Over Other Apps: Required to display the full-screen alarm</li>
-</ul>
-<p>dismiss interface over your lock screen or other running Applications when an alarm goes off.</p>
 <br>
 <h3><strong>Cookies and tracking technologies</strong></h3>
-<p>The Application or its third-party SDKs may use cookies, SDKs, pixels, device</p>
-<p>identifiers, and similar technologies to support functionality, analytics, service</p>
-<p>delivery, and advertising. Where required by applicable law (such as in the European</p>
-<p>Economic Area), the Service Provider will obtain consent before using non-essential</p>
-<p>tracking technologies.</p>
+<p>The Application or its third-party SDKs may use cookies, SDKs, pixels, device identifiers, and similar technologies to support functionality, analytics, service delivery, and advertising. Where required by applicable law (such as in the European Economic Area), the Service Provider will obtain consent before using non-essential tracking technologies.</p>
 <br>
 <h3><strong>Your Rights</strong></h3>
 <p>Depending on your location, you may have the right to:</p>
@@ -63,18 +41,12 @@
 <p>To exercise your rights, contact: <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a></p>
 <br>
 <h3><strong>Your California privacy rights (CCPA/CPRA)</strong></h3>
-<p>If you are a California resident, you have the right to know what personal information</p>
-<p>is collected, the right to delete personal information, the right to opt out of the</p>
-<p>sale or sharing of personal information, and the right to non-discrimination for</p>
-<p>exercising these rights. To exercise your CCPA/CPRA rights, contact the Service Provider</p>
-<p>at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
+<p>If you are a California resident, you have the right to know what personal information is collected, the right to delete personal information, the right to opt out of the sale or sharing of personal information, and the right to non-discrimination for exercising these rights. To exercise your CCPA/CPRA rights, contact the Service Provider at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
 <p>The Service Provider does not sell personal information as defined under CCPA/CPRA.</p>
-<p>The Service Provider may use the information you provide to send important information,</p>
-<p>required notices, and, where permitted by law, marketing communications.</p>
+<p>The Service Provider does not send you marketing communications. If you contact the Service Provider directly (for example, by email), your message and any information you provide will be used only to respond to your inquiry.</p>
 <br>
 <h3><strong>Third Party Access</strong></h3>
-<p>The Application uses third-party services that may collect, process, and store information</p>
-<p>in accordance with their own privacy policies. These services include:</p>
+<p>The Application uses third-party services that may collect, process, and store information in accordance with their own privacy policies. These services include:</p>
 <ul>
   <li>
     <p>Google Play Services</p>
@@ -88,40 +60,59 @@
   <li>
     <p>Firebase Crashlytics</p>
   </li>
+  <li>
+    <p>OpenWeatherMap</p>
+  </li>
+  <li>
+    <p>NewsData.io</p>
+  </li>
+  <li>
+    <p>Frankfurter API</p>
+  </li>
+  <li>
+    <p>Firebase Remote Config</p>
+  </li>
+  <li>
+    <p>Firebase Installations</p>
+  </li>
+  <li>
+    <p>Google Play In-App Review</p>
+  </li>
+  <li>
+    <p>Google User Messaging Platform (UMP)</p>
+  </li>
+  <li>
+    <p>Google Cloud Platform (the Service Provider's own backend infrastructure, including Firestore and Cloud Functions)</p>
+  </li>
+  <li>
+    <p>The Conversation (RSS news source)</p>
+  </li>
+  <li>
+    <p>Global Voices (RSS news source)</p>
+  </li>
 </ul>
-<p>These third parties may collect data such as device identifiers, usage data, and</p>
-<p>diagnostic information.</p>
-<p>Advertising providers such as AdMob may use advertising identifiers and similar</p>
-<p>technologies to display personalized or non-personalized ads, depending on your</p>
-<p>location and consent choices (where required by law, such as in the EEA/UK).</p>
+<p>These third parties may collect data such as device identifiers, usage data, and diagnostic information.</p>
+<p>Advertising providers such as AdMob may use advertising identifiers and similar technologies to display personalized or non-personalized ads, depending on your location and consent choices (where required by law, such as in the EEA/UK).</p>
 <br>
 <h3><strong>Data Sharing</strong></h3>
-<p>The Service Provider does not sell your personal data. Information may be shared</p>
-<p>with third-party Service Providers strictly for the following purposes:</p>
+<p>The Service Provider does not sell your personal data. Information may be shared with third-party Service Providers strictly for the following purposes:</p>
 <ul>
   <li>Analytics and usage measurement</li>
   <li>Advertising and monetization</li>
   <li>Crash reporting and diagnostics</li>
   <li>Service improvement</li>
+  <li>Providing weather, air quality, currency, and news content relevant to your settings</li>
 </ul>
 <br>
 <h3><strong>International Data Transfers</strong></h3>
-<p>The Service Provider or its third-party Service Providers may transfer personal</p>
-<p>data to countries outside your country of residence, including outside the European</p>
-<p>Economic Area (EEA). Where applicable law requires safeguards for international</p>
-<p>transfers, the Service Provider will use appropriate mechanisms.</p>
+<p>The Service Provider or its third-party Service Providers may transfer personal data to countries outside your country of residence, including outside the European Economic Area (EEA). Where applicable law requires safeguards for international transfers, the Service Provider will use appropriate mechanisms.</p>
 <ul>
   <li>Standard Contractual Clauses (SCCs) approved by the European Commission</li>
   <li>Adequacy decisions or other legally recognized transfer mechanisms</li>
   <li>Your consent, where required and legally permitted</li>
 </ul>
-<p>Data protection laws in other countries may differ from those in your jurisdiction.</p>
-<p>Where required by law, the Service Provider will apply appropriate safeguards and</p>
-<p>obtain any consent required for the transfer.</p>
-<p>Please note that the Application utilizes third-party services that have their own</p>
-<p>Privacy Policy about handling data.</p>
-<p>For more information about how these third-party services handle data, please refer</p>
-<p>to their respective privacy policies below:</p>
+<p>Data protection laws in other countries may differ from those in your jurisdiction. Where required by law, the Service Provider will apply appropriate safeguards and obtain any consent required for the transfer.</p>
+<p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. For more information about how these third-party services handle data, please refer to their respective privacy policies below:</p>
 <ul>
   <li>
     <p><a href="https://www.google.com/policies/privacy/">Google Play Services</a></p>
@@ -135,87 +126,83 @@
   <li>
     <p><a href="https://firebase.google.com/support/privacy/">Firebase Crashlytics</a></p>
   </li>
+  <li>
+    <p><a href="https://openweathermap.org/privacy-policy">OpenWeatherMap</a></p>
+  </li>
+  <li>
+    <p><a href="https://newsdata.io/privacy-policy">NewsData.io</a></p>
+  </li>
+  <li>
+    <p>Frankfurter (an open, non-commercial exchange rate API operated using European Central Bank reference data; it does not collect or process personal data and does not publish a separate consumer privacy policy)</p>
+  </li>
+  <li>
+    <p><a href="https://firebase.google.com/support/privacy">Firebase Remote Config</a></p>
+  </li>
+  <li>
+    <p><a href="https://firebase.google.com/support/privacy">Firebase Installations</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.google.com/policies/privacy/">Google Play In-App Review</a></p>
+  </li>
+  <li>
+    <p><a href="https://policies.google.com/privacy">Google User Messaging Platform (UMP)</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Platform</a></p>
+  </li>
+  <li>
+    <p><a href="https://theconversation.com/us/privacy-policy">The Conversation</a></p>
+  </li>
+  <li>
+    <p><a href="https://globalvoices.org/privacy/">Global Voices</a></p>
+  </li>
 </ul>
 <br>
 <h3><strong>Data Disclosure</strong></h3>
 <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
 <ul>
   <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
-  <li>when they believe in good faith that disclosure is necessary to protect their</li>
+  <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+  <li>with their trusted services providers who work on their behalf, do not have an independent use of the information the Service Provider discloses to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
 </ul>
-<p>rights, protect your safety or the safety of others, investigate fraud, or respond</p>
-<p>to a government request;</p>
-<ul>
-  <li>with their trusted services providers who work on their behalf, do not have an</li>
-</ul>
-<p>independent use of the information the Service Provider discloses to them, and have</p>
-<p>agreed to adhere to the rules set forth in this privacy statement.</p>
 <br>
 <h3><strong>Opt-Out Rights</strong></h3>
-<p>You can stop further collection of information from your mobile device by uninstalling</p>
-<p>the Application. Uninstalling will stop the Application from collecting data from your</p>
-<p>device, but it does not automatically delete information that has already been</p>
-<p>transmitted to the Service Provider or to third parties.</p>
+<p>You can stop further collection of information from your mobile device by uninstalling the Application. Uninstalling will stop the Application from collecting data from your device, but it does not automatically delete information that has already been transmitted to the Service Provider or to third parties.</p>
 <br>
 <h3><strong>Data Retention Policy</strong></h3>
 <p>The Service Provider retains personal data based on its necessity for the stated purposes:</p>
 <ul>
-  <li>Automatically Collected Data: Retention periods may vary depending on the third-party</li>
-</ul>
-<p>Service Providers used by the ApplicationDiagnostic and crash data: retained as needed</p>
-<p>to improve Application stability</p>
-<ul>
+  <li>Automatically Collected Data: Retention periods may vary depending on the third-party Service Providers used by the Application</li>
+  <li>Diagnostic and crash data: retained as needed to improve Application stability</li>
   <li>Aggregated or de-identified data: May be retained for longer periods</li>
   <li>Data required for legal compliance: Retained as long as required by applicable law</li>
 </ul>
-<p>If any user-provided data is ever collected, it will be retained only for as long as</p>
-<p>necessary for its intended purpose, unless a longer retention period is required by law.</p>
+<p>If any user-provided data is ever collected, it will be retained only for as long as necessary for its intended purpose, unless a longer retention period is required by law.</p>
 <br>
 <h3><strong>Children’s Privacy</strong></h3>
-<p>The Application is not directed to children under the age of 13. In jurisdictions where</p>
-<p>a higher minimum age is required (such as the European Economic Area), the Application</p>
-<p>is not intended for users below that age unless appropriate consent has been obtained.</p>
-<p>The Service Provider does not knowingly solicit data from</p>
-<p>children or market the Application to them.</p>
-<p>Where parental or guardian consent is required under applicable law, the Application</p>
-<p>is not intended for use without that consent.</p>
-<p>While the Application does not directly request personal information (such as name,</p>
-<p>email address, or phone number), certain data (such as device identifiers and usage data)</p>
-<p>may be collected automatically by third-party services (e.g., analytics, advertising,</p>
-<p>and crash reporting tools).</p>
-<p>In the event the Service Provider discovers that a child has provided personal information,</p>
-<p>the Service Provider will immediately delete this from their servers.</p>
-<p>If you are a parent or guardian and you are aware that your child has provided the</p>
-<p>Service Provider with personal information, please contact the Service Provider at</p>
-<p><a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a> so that they will be able to take the necessary actions.</p>
+<p>The Application is not directed to children under the age of 13. In jurisdictions where a higher minimum age is required (such as the European Economic Area), the Application is not intended for users below that age unless appropriate consent has been obtained.</p>
+<p>The Service Provider does not knowingly solicit data from children or market the Application to them.</p>
+<p>Where parental or guardian consent is required under applicable law, the Application is not intended for use without that consent.</p>
+<p>While the Application does not directly request personal information (such as name, email address, or phone number), certain data (such as device identifiers and usage data) may be collected automatically by third-party services (e.g., analytics, advertising, and crash reporting tools).</p>
+<p>In the event the Service Provider discovers that a child has provided personal information, the Service Provider will immediately delete this.</p>
+<p>If you are a parent or guardian and you are aware that your child has provided the Service Provider with personal information, please contact the Service Provider at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a> so that they will be able to take the necessary actions.</p>
 <br>
 <h3><strong>Security</strong></h3>
-<p>The Service Provider implements reasonable technical and organizational measures to</p>
-<p>protect your information.</p>
+<p>The Service Provider implements reasonable technical and organizational measures to protect your information.</p>
 <br>
 <h3><strong>Data Breach Notification</strong></h3>
-<p>If a data breach occurs that affects your personal data, the Service Provider will</p>
-<p>notify you in accordance with applicable legal requirements, including, where required,</p>
-<p>providing information about the nature of the breach and the steps being taken to address it.</p>
+<p>If a data breach occurs that affects your personal data, the Service Provider will notify you in accordance with applicable legal requirements, including, where required, providing information about the nature of the breach and the steps being taken to address it.</p>
 <br>
 <h3><strong>Changes</strong></h3>
-<p>The Service Provider may update this Privacy Policy from time to time. The Service Provider</p>
-<p>will notify you of material changes by posting the updated Privacy Policy with an effective</p>
-<p>date. Where required by law, the Service Provider will seek your consent to material changes</p>
-<p>before they take effect.</p>
-<p>Previous versions of this Privacy Policy will be maintained and made available upon request</p>
-<p>by contacting the Service Provider at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
+<p>The Service Provider may update this Privacy Policy from time to time. The Service Provider will notify you of material changes by posting the updated Privacy Policy with an effective date. Where required by law, the Service Provider will seek your consent to material changes before they take effect.</p>
+<p>Previous versions of this Privacy Policy will be maintained and made available upon request by contacting the Service Provider at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
 <br>
 <h3><strong>Your Consent</strong></h3>
-<p>Where processing is based on consent, you provide that consent by affirmatively</p>
-<p>opting in to the relevant feature or action. You may withdraw consent at any</p>
-<p>time without affecting processing carried out before withdrawal. Processing based</p>
-<p>on other lawful bases is carried out as described above.</p>
+<p>Where processing is based on consent, you provide that consent by affirmatively opting in to the relevant feature or action. You may withdraw consent at any time without affecting processing carried out before withdrawal. Processing based on other lawful bases is carried out as described above.</p>
 <br>
 <h3><strong>Contact Us</strong></h3>
-<p>If you have any questions regarding privacy while using the Application, or have questions</p>
-<p>about the practices, please contact the Service Provider via email at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
+<p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
 <br>
 <h3><strong>Effective date</strong></h3>
-<p>This privacy policy is effective as of 2026-06-15</p>
+<p>This privacy policy is effective as of 2026-10-5</p>
 <p>---</p>
