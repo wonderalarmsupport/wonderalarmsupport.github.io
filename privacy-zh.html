@@ -1,10 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy / 隐私政策 — Wonder Alarm</title>
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #121212; }
+    a { color: #8ab4f8; }
+    .lang-switch button { background: #2a2a2a; color: #e8e8e8; border-color: #444; }
+    .lang-switch button.active { background: #3a6ea5; color: #fff; border-color: #3a6ea5; }
+  }
+  h2 { font-size: 1.5em; margin-top: 0; }
+  h3 { font-size: 1.15em; margin-top: 1.6em; }
+  .lang-switch {
+    position: sticky;
+    top: 0;
+    background: inherit;
+    padding: 12px 0;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid rgba(128,128,128,0.25);
+    z-index: 10;
+  }
+  .lang-switch button {
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(128,128,128,0.4);
+    background: #f0f0f0;
+    color: #1a1a1a;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: #3a6ea5;
+    color: #fff;
+    border-color: #3a6ea5;
+  }
+  #content-en-pipl, #content-en-general { display: none; }
+  a { color: #1a5fb4; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button id="btn-zh" class="active" onclick="setPiplLang('zh')">中文</button>
+  <button id="btn-en" onclick="setPiplLang('en')">English</button>
+</div>
+
+<div id="content-zh">
 <h2><strong>隐私政策</strong></h2>
-<p>本隐私政策适用于移动设备应用程序 Wonder Alarm Clock & Tracker，以及由 Apostolos Montesantos（AlphaMu Studios）运营的任何相关服务（以下统称"本应用"）。Apostolos Montesantos（AlphaMu Studios）在本政策中称为"个人信息处理者"或"我们"。</p>
+<p>本隐私政策适用于移动设备应用程序 Wonder Alarm Clock &amp; Tracker，以及由 Apostolos Montesantos（AlphaMu Studios）运营的任何相关服务（以下统称"本应用"）。Apostolos Montesantos（AlphaMu Studios）在本政策中称为"个人信息处理者"或"我们"。</p>
 <p>本政策依据《中华人民共和国个人信息保护法》（以下简称"个人信息保护法"或"PIPL"）及相关法律法规制定，适用于中国大陆地区的用户。</p>
 <br>
 <h3><strong>个人信息处理者的身份与联系方式</strong></h3>
 <p>个人信息处理者：Apostolos Montesantos（AlphaMu Studios）</p>
-<p>应用名称：Wonder Alarm Clock & Tracker</p>
+<p>应用名称：Wonder Alarm Clock &amp; Tracker</p>
 <p>联系邮箱：<a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a></p>
 <br>
 <h3><strong>我们收集的个人信息</strong></h3>
@@ -67,14 +131,13 @@
 <p>为保障应用的核心功能稳定运行、进行必要的分析与故障诊断、以及实现广告等商业化功能，我们接入了以下第三方服务/SDK。它们可能根据各自适用的隐私政策、服务条款以及与我们的服务安排，作为独立个人信息处理者、受托处理方或服务提供商处理相关信息：</p>
 <p><strong>（一）接收设备/使用数据的服务商：</strong></p>
 <ul>
-  <li><strong>Google Play Services / Firebase Analytics / Firebase Crashlytics / Firebase Remote Config / Firebase Installations</strong> — 运营方：Google LLC；收集数据：设备标识符、应用崩溃日志、性能诊断数据、使用统计、安装标识符；目的：崩溃分析、性能优化、远程配置、使用统计；隐私政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-  <li><strong>AdMob / Google 用户消息平台（UMP）</strong> — 运营方：Google LLC 及合作广告主；收集数据：设备标识符（如广告标识符，以及在适用设备和服务中使用的其他标识符）、广告互动数据；目的：广告展示及用户隐私同意管理；隐私政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-  <li><strong>Google Play 应用内评价</strong> — 运营方：Google LLC；目的：应用内评分与评价功能；隐私政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li><strong>华为 AGConnect Core / HiAnalytics（华为分析服务）</strong> — 运营方：华为软件技术有限公司；收集数据：设备标识符、应用使用统计、应用事件；目的：使用情况分析、服务运行；隐私政策：<a href="https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707">https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707</a></li>
+  <li><strong>华为广告服务（HUAWEI Ads Kit）</strong> — 运营方：华为软件技术有限公司及合作广告主；收集数据：设备标识符（如 OAID，以及在适用设备和服务中使用的其他标识符）、广告互动数据；目的：广告投放；隐私政策：<a href="https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707">https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707</a></li>
   <li><strong>Google Cloud Platform（我们自己的后端基础设施，包括 Firestore 和 Cloud Functions）</strong> — 运营方：Google LLC；收集数据：请求所需的城市名称、货币代码、语言选择，以及经哈希处理的 IP 地址；目的：提供天气、空气质量、汇率、新闻简报功能；隐私政策：<a href="https://cloud.google.com/terms/cloud-privacy-notice">https://cloud.google.com/terms/cloud-privacy-notice</a></li>
   <li><strong>OpenWeatherMap</strong> — 运营方：OpenWeather Ltd；收集数据：经由我们后端转发的城市名称（用于定位）及经纬度坐标；目的：提供天气与空气质量数据；隐私政策：<a href="https://openweathermap.org/privacy-policy">https://openweathermap.org/privacy-policy</a></li>
   <li><strong>WeatherAPI.com</strong> — 运营方：WeatherAPI.com；收集数据：经由我们后端转发的城市名称；目的：当 OpenWeatherMap 暂时不可用时，作为天气数据的备用来源；隐私政策：<a href="https://www.weatherapi.com/privacy.aspx">https://www.weatherapi.com/privacy.aspx</a></li>
   <li><strong>NewsData.io</strong> — 运营方：NewsData.io；收集数据：地区代码、语言偏好；目的：获取新闻标题；隐私政策：<a href="https://newsdata.io/privacy-policy">https://newsdata.io/privacy-policy</a></li>
-  <li><strong>Frankfurter API</strong> — 提供公开的汇率数据接口（基于欧洲央行参考数据）。Wonder Alarm Clock & Tracker 通过自身后端服务获取汇率数据，不向该服务传递终端用户的姓名、电子邮箱、电话号码、设备标识符或其他直接识别用户身份的信息。</li>
+  <li><strong>Frankfurter API</strong> — 提供公开的汇率数据接口（基于欧洲央行参考数据）。Wonder Alarm Clock &amp; Tracker 通过自身后端服务获取汇率数据，不向该服务传递终端用户的姓名、电子邮箱、电话号码、设备标识符或其他直接识别用户身份的信息。</li>
 </ul>
 <p><strong>（二）新闻内容来源（非直接接收您个人信息的处理者）：</strong></p>
 <p>The Conversation、Global Voices 等 RSS 新闻来源仅提供新闻内容本身；新闻缩略图由这些发布者自己的服务器直接提供给您的设备（见上文"新闻缩略图"相关说明）。这些内容提供方仅接收为获取相关内容所必需的请求参数，不会收到您的姓名、电子邮箱地址或其他直接身份识别信息。</p>
@@ -91,8 +154,8 @@
 <ul>
   <li>后端请求中经哈希处理的 IP 地址：数分钟内自动删除</li>
   <li>后端经哈希处理的城市名称缓存键：按缓存策略保留，仅用于减少重复的第三方请求</li>
-  <li>Firebase Analytics / Crashlytics / Remote Config / Installations 相关数据：按 Google/Firebase 各自产品的数据保留政策处理</li>
-  <li>广告相关数据（AdMob）：按 Google 广告相关政策处理</li>
+  <li>华为 AGConnect Core / HiAnalytics 相关数据：按华为自身的数据保留政策处理</li>
+  <li>广告相关数据（HUAWEI Ads Kit）：按华为广告相关政策处理</li>
   <li>闹钟设置、自定义标签、自定义铃声、睡眠记录、睡眠评分、饮水与拉伸打卡数据：仅保存在您的设备本地，直至您手动删除、清除应用数据或卸载本应用</li>
 </ul>
 <p>若收集到任何其他用户提供的数据，仅在实现其既定目的所必需的期限内保留，法律另有较长保留期限要求的除外。</p>
@@ -124,4 +187,365 @@
 <br>
 <h3><strong>生效日期</strong></h3>
 <p>本隐私政策自 2026-10-5 起生效。</p>
-<p>---</p>
+</div>
+
+<div id="content-en-pipl">
+<h2><strong>Privacy Policy</strong></h2>
+<p>This Privacy Policy applies to the mobile application Wonder Alarm Clock &amp; Tracker, together with any related services operated by Apostolos Montesantos, doing business as AlphaMu Studios (collectively, the "Application"). Apostolos Montesantos (AlphaMu Studios) is referred to in this Policy as the "personal information processor" or "we".</p>
+<p>This Policy is formulated in accordance with the Personal Information Protection Law of the People's Republic of China (hereinafter, the "Personal Information Protection Law" or "PIPL") and other applicable laws and regulations, and applies to users located in mainland China.</p>
+<br>
+<h3><strong>Identity and Contact Information of the Personal Information Processor</strong></h3>
+<p>Personal information processor: Apostolos Montesantos (AlphaMu Studios)</p>
+<p>Application name: Wonder Alarm Clock &amp; Tracker</p>
+<p>Contact email: <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a></p>
+<br>
+<h3><strong>Personal Information We Collect</strong></h3>
+<p>The Application itself does not directly collect your personal information. However, when you download and use the Application, third-party services may automatically collect related information.</p>
+<p>Your alarm settings, custom labels, custom ringtones, sleep logs, sleep scores, and water and stretch check-in data are stored only locally on your device; our servers do not collect or store this data, nor do we transmit it to any third party.</p>
+<p>Information that may be automatically collected through third-party services includes:</p>
+<ul>
+  <li>Your device's Internet Protocol (IP) address</li>
+  <li>Device identifiers (such as the Advertising Identifier, and other device identifiers used on applicable devices and services, such as GAID or OAID)</li>
+  <li>The pages of the Application you visit, the time and date of your visit, and the time spent on those pages</li>
+  <li>The total time spent using the Application</li>
+  <li>Application crash logs, non-fatal error messages, and performance analytics data</li>
+  <li>The version of the mobile operating system you use</li>
+</ul>
+<p>The Application does not directly collect identity information such as your name, email address, or phone number. However, third-party services may process device-related identifiers and usage data for the purposes of analytics, advertising, and crash reporting.</p>
+<p>The Application also allows you to select a city, a base currency, and an in-app display language. To provide weather, currency, and news content, the city name, currency code, and app language you select are sent to our own backend service. For the news feature, the region and language information from your device's system settings are read (not separately selected within the app, and not involving GPS or other precise location information) in order to retrieve region-appropriate news headlines. In every case, only the above necessary information is forwarded to third-party weather, currency, and news data providers in order to retrieve and display this content; your name, email address, or other identity information is never forwarded.</p>
+<p>News thumbnail images (if any) are loaded directly from the original publisher's own servers, which is standard practice for news and RSS reader applications. This means that when such an image loads, your device connects directly to that publisher's server, and the publisher may therefore see your device's IP address and standard network request information (the same as when browsing any ordinary webpage).</p>
+<p>Our own backend service necessarily receives your device's IP address with every request, which is used, after being hashed, for rate limiting and to protect the service against abuse; the related record is automatically deleted within a few minutes. The city name you enter is also hashed and used solely as a cache key, to avoid repeating the same request to the third-party weather provider.</p>
+<br>
+<h3><strong>Sensitive Personal Information</strong></h3>
+<p>Our servers do not collect or store your sleep logs, sleep scores, water records, or stretch records; this data is stored only locally on your device, and is therefore never transmitted by us to any third party or used for server-side processing.</p>
+<p>The city name the Application asks you to enter is used only to retrieve weather information, and does not involve continuous tracking of your precise location or movements. The Application does not proactively request or process biometric information, religious beliefs, specific identity, financial account information, or other sensitive personal information as defined by the Personal Information Protection Law.</p>
+<br>
+<h3><strong>Purpose, Manner, and Legal Basis of Processing</strong></h3>
+<p>We process personal information only for the following purposes: providing alarm and reminder services; displaying weather/air quality/currency/news briefings; providing wellness reminder features; carrying out necessary crash analysis and service improvement; and displaying advertisements (where applicable).</p>
+<p>For different processing activities, we rely on the corresponding legal bases set out in Article 13 of the Personal Information Protection Law, including, where applicable, your consent (for example, choices made regarding advertising and analytics through the consent management mechanism), and processing necessary to provide services you have actively requested (such as weather, currency, and news lookups).</p>
+<p>Retention periods are set out in the "Data Retention Policy" section below.</p>
+<br>
+<h3><strong>Device Permissions Required by the Application</strong></h3>
+<p>To function properly as a reliable alarm clock, the Application requires the following system permissions. We only use these permissions to provide the Application's core functionality, and no personal data is ever collected, stored, or transmitted through them:</p>
+<ul>
+  <li>Exact Alarm permission (SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM): used to ensure alarms ring at the exact time you set.</li>
+  <li>Notification permission: used to display the alarm's active status in the status bar and to trigger alerts.</li>
+  <li>Battery optimization settings: the Application opens the system's battery optimization list so that you can manually exclude the Application, preventing the Android system from putting the Application to sleep, so that alarms continue to ring reliably even while the device is in deep sleep.</li>
+  <li>System alert window / display over other apps: used to display the full-screen alarm dismiss interface over the lock screen or other running applications when an alarm rings, and to display the bedtime reminder popup at your configured bedtime.</li>
+  <li>Full-screen intent permission (USE_FULL_SCREEN_INTENT): used to launch the alarm-ringing screen directly over the lock screen when an alarm fires, so you see it immediately rather than only receiving a notification.</li>
+  <li>Foreground service permission (FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK): used to ensure the alarm sound can keep playing reliably in the background while the alarm is ringing.</li>
+  <li>Receive Boot Completed permission (RECEIVE_BOOT_COMPLETED): used to automatically reschedule your alarms after the device restarts, without you needing to reopen the Application.</li>
+</ul>
+<br>
+<h3><strong>Cookies and Tracking Technologies</strong></h3>
+<p>The Application or its third-party SDKs may use cookies, SDKs, pixel tags, device identifiers, and similar technologies to support functionality, analytics, service delivery, and advertising. Where required by applicable law, we will obtain your consent before using non-essential tracking technologies.</p>
+<br>
+<h3><strong>Your Rights Under the Personal Information Protection Law</strong></h3>
+<p>Under Chapter IV of the Personal Information Protection Law, you have the following rights:</p>
+<ul>
+  <li>Right to be informed and to decide: to know and decide how your personal information is processed</li>
+  <li>Right to access and to copy: to access and obtain a copy of your personal information</li>
+  <li>Right to portability: where the conditions set by the state are met, to request that your personal information be transferred to another personal information processor you designate</li>
+  <li>Right to correction and supplementation: to correct or supplement inaccurate or incomplete personal information</li>
+  <li>Right to deletion: to request deletion of your personal information in legally specified circumstances</li>
+  <li>Right to explanation: to require us to explain our personal information processing rules</li>
+  <li>Right to withdraw consent: to withdraw previously given consent at any time; withdrawal does not affect the validity of processing already carried out based on consent before the withdrawal</li>
+  <li>Right to restrict processing: to request that the processing of your personal information be restricted, in circumstances specified by law</li>
+  <li>Right to refuse: to refuse decisions, made by others solely through automated decision-making, that significantly affect your rights and interests (the Application does not involve this kind of automated decision-making)</li>
+</ul>
+<p>To exercise the rights above, please contact us at: <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>. We will process your request within the period specified by applicable law, and will explain the outcome or the reasons we are unable to fulfill the request, where necessary.</p>
+<br>
+<h3><strong>Third-Party SDKs and Information Sharing (SDK Directory)</strong></h3>
+<p>To ensure the stable operation of the Application's core functionality, carry out necessary analytics and troubleshooting, and implement commercial features such as advertising, we integrate the following third-party services/SDKs. They may, as independent personal information processors, entrusted processors, or service providers, process related information in accordance with their own applicable privacy policies, terms of service, and our arrangements with them:</p>
+<p><strong>(1) Service providers that receive device/usage data:</strong></p>
+<ul>
+  <li><strong>HUAWEI AGConnect Core / HiAnalytics</strong> — Operator: Huawei Software Technologies Co., Ltd.; Data collected: device identifiers, application usage statistics, application events; Purpose: usage analytics, service operation; Privacy policy: <a href="https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707">https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707</a></li>
+  <li><strong>HUAWEI Ads Kit</strong> — Operator: Huawei Software Technologies Co., Ltd. and partner advertisers; Data collected: device identifiers (such as OAID, and other identifiers used on applicable devices and services), ad interaction data; Purpose: ad serving; Privacy policy: <a href="https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707">https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707</a></li>
+  <li><strong>Google Cloud Platform (our own backend infrastructure, including Firestore and Cloud Functions)</strong> — Operator: Google LLC; Data collected: city name, currency code, and language selection needed for the request, and the hashed IP address; Purpose: providing weather, air quality, currency, and news briefing features; Privacy policy: <a href="https://cloud.google.com/terms/cloud-privacy-notice">https://cloud.google.com/terms/cloud-privacy-notice</a></li>
+  <li><strong>OpenWeatherMap</strong> — Operator: OpenWeather Ltd; Data collected: the city name forwarded via our backend (for location lookup) and the resulting latitude/longitude coordinates; Purpose: providing weather and air quality data; Privacy policy: <a href="https://openweathermap.org/privacy-policy">https://openweathermap.org/privacy-policy</a></li>
+  <li><strong>WeatherAPI.com</strong> — Operator: WeatherAPI.com; Data collected: the city name forwarded via our backend; Purpose: a backup weather data source when OpenWeatherMap is temporarily unavailable; Privacy policy: <a href="https://www.weatherapi.com/privacy.aspx">https://www.weatherapi.com/privacy.aspx</a></li>
+  <li><strong>NewsData.io</strong> — Operator: NewsData.io; Data collected: region code, language preference; Purpose: retrieving news headlines; Privacy policy: <a href="https://newsdata.io/privacy-policy">https://newsdata.io/privacy-policy</a></li>
+  <li><strong>Frankfurter API</strong> — Provides a public exchange-rate data interface (based on European Central Bank reference data). Wonder Alarm Clock &amp; Tracker retrieves exchange-rate data through its own backend service, and does not pass this service any end user's name, email address, phone number, device identifiers, or other information that directly identifies the user.</li>
+</ul>
+<p><strong>(2) News content sources (not direct recipients of your personal information):</strong></p>
+<p>RSS news sources such as The Conversation and Global Voices provide only the news content itself; news thumbnail images are provided directly to your device by these publishers' own servers (see "News Thumbnail Images" above). These content providers receive only the request parameters necessary to retrieve the relevant content, and do not receive your name, email address, or other direct identity information.</p>
+<p>We do not sell your personal information. We share necessary information with the third-party service providers above only for the following purposes: data analytics and usage statistics, advertising and monetization, crash reporting and troubleshooting, service improvement, and providing weather, air quality, currency, and news content according to your settings.</p>
+<br>
+<h3><strong>Cross-Border Transfer of Personal Information</strong></h3>
+<p>Because the servers of some third-party services used by the Application (as listed in "Third-Party SDKs and Information Sharing" above) are located outside mainland China, some of your personal information (primarily device identifiers, application usage data, crash diagnostic information, and the city name, currency code, and language selection you actively provide to obtain weather, currency, and news content — none of which includes name, email address, or other directly identifying information) may be transferred to, and processed in, countries or regions outside mainland China.</p>
+<p>For personal information transferred outside the People's Republic of China, before the transfer we will, as required by law, inform you of the name and contact details of the overseas recipient, the purpose and manner of processing, the categories of personal information involved, and the way and procedure for you to exercise your rights with respect to the overseas recipient, and will obtain your separate consent as required by law — except where laws, administrative regulations, or the national cyberspace administration provide that consent is not required.</p>
+<p>Where, under applicable Chinese laws and regulations, the relevant cross-border transfer of personal information does not fall under a circumstance exempt from the data export procedures, we will, before carrying out the relevant cross-border transfer, fulfill the applicable data export compliance requirements as required by law, including, as applicable, conducting a personal information protection impact assessment, and completing the applicable requirements through personal information protection certification, the standard contracts formulated by the national cyberspace administration, or another applicable data export mechanism.</p>
+<p>You have the right to ask us for specific information about overseas recipients in relation to cross-border transfers, and may exercise your rights under this Policy through the means listed in the "Contact Us" section of this Policy.</p>
+<br>
+<h3><strong>Data Retention Policy</strong></h3>
+<p>We retain personal information only for the minimum period necessary to achieve the purposes of processing:</p>
+<ul>
+  <li>Hashed IP addresses in backend requests: automatically deleted within a few minutes</li>
+  <li>Hashed city-name cache keys on the backend: retained according to caching policy, used only to reduce repeated third-party requests</li>
+  <li>Data related to HUAWEI AGConnect Core / HiAnalytics: handled according to Huawei's own data retention policies</li>
+  <li>Advertising-related data (HUAWEI Ads Kit): handled according to Huawei's advertising-related policies</li>
+  <li>Alarm settings, custom labels, custom ringtones, sleep logs, sleep scores, and water and stretch check-in data: stored only locally on your device, until you manually delete it, clear the Application's data, or uninstall the Application</li>
+</ul>
+<p>If any other user-provided data is collected, it is retained only for the period necessary to achieve its stated purpose, unless a longer retention period is required by law.</p>
+<br>
+<h3><strong>Protection of Minors' Personal Information</strong></h3>
+<p>The Application is not directed to minors under the age of fourteen. We do not knowingly collect personal information from minors, nor do we promote the Application to minors.</p>
+<p>The Application does not directly request personal information such as name, email address, or phone number, but information such as device identifiers and usage data may be automatically collected by third-party services (such as analytics, advertising, and crash reporting tools).</p>
+<p>If we discover that we have collected a minor's personal information without guardian consent, we will delete the relevant information immediately.</p>
+<p>If you are a guardian and discover that your ward has provided personal information to us, please contact us at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a> so that we can take the necessary measures promptly.</p>
+<br>
+<h3><strong>Information Security</strong></h3>
+<p>We take reasonable technical and organizational measures to protect the security of your personal information, and to prevent unauthorized access, disclosure, use, alteration, damage, or loss.</p>
+<br>
+<h3><strong>Data Breach Notification</strong></h3>
+<p>In the event of a data breach affecting the security of your personal information, we will, as required by applicable laws and regulations, promptly inform you of the nature of the breach and the remedial measures we have taken or will take, and will report to the relevant competent authorities where required by law.</p>
+<br>
+<h3><strong>Changes to This Policy</strong></h3>
+<p>We may update this Privacy Policy from time to time. In the event of a material change, we will notify you by publishing the updated Privacy Policy and indicating its effective date. Where required by law, we will obtain your consent before the change takes effect.</p>
+<p>If you wish to review previous versions of this Privacy Policy, you may contact us at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a> to request them.</p>
+<br>
+<h3><strong>Complaints and Reports</strong></h3>
+<p>If you believe that our processing of your personal information does not comply with the law or with this Policy, you may contact us through the means listed in the "Contact Us" section of this Policy; you also have the right to file a complaint or report with the national cyberspace administration or other competent authority.</p>
+<br>
+<h3><strong>Your Consent</strong></h3>
+<p>Where our processing activities are based on your consent, you give that consent by actively choosing to enable the relevant feature or by taking the relevant action. You may withdraw your consent at any time; withdrawal does not affect the validity of processing already carried out based on consent before the withdrawal. Processing activities based on other legal bases are carried out as described above.</p>
+<br>
+<h3><strong>Contact Us</strong></h3>
+<p>If you have any questions about privacy in connection with your use of the Application, or about how we process your information, please contact us by email: <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
+<br>
+<h3><strong>Effective Date</strong></h3>
+<p>This Privacy Policy is effective as of 2026-10-5.</p>
+</div>
+
+<div id="content-en-general">
+<h2><strong>Privacy Policy</strong></h2>
+<p>This privacy policy applies to the Wonder Alarm app for mobile devices, together with any related services operated by AlphaMu Studios (collectively, the "Application"). AlphaMu Studios is hereby referred to as the "Service Provider".</p>
+<br>
+<h3><strong>Information Collection and Use</strong></h3>
+<p>The Application does not directly collect personal data. However, information may be collected automatically through third-party services when you download and use the Application.</p>
+<p>Your alarms, custom labels, custom alarm sounds, sleep logs, and water and stretch tracking data are stored only locally on your device and are never transmitted to the Service Provider or to any third party.</p>
+<ul>
+  <li>Your device's Internet Protocol address</li>
+  <li>Device identifiers (such as the Advertising Identifier, and other device identifiers used on applicable devices and services, such as OAID)</li>
+  <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
+  <li>The time spent on the Application</li>
+  <li>Application crash logs, non-fatal error messages and performance analytics</li>
+  <li>Your mobile operating system you use</li>
+</ul>
+<p>The Application does not directly collect personally identifiable information such as your name, email address, or phone number. However, it processes device-related identifiers and usage data through third-party services for analytics and advertising purposes.</p>
+<p>The Application also allows you to select a city, a base currency, and an in-app display language. To provide weather, currency, and news content, the city name, currency code, and your selected app language are sent to the Service Provider's own backend service. For news specifically, your device's region and system language — detected automatically from your device settings, not separately selected within the app — are also sent, so that region-appropriate headlines can be retrieved. In every case, only these necessary values are forwarded — never any personally identifiable information — to third-party weather, currency, and news data providers in order to retrieve and display this content. News thumbnail images, when available, are loaded directly from the original publisher's own servers, which is standard practice for news and RSS readers; this means your device connects directly to that publisher when displaying such an image.</p>
+<p>The Service Provider's own backend service also necessarily receives your device's IP address with every request, which it uses briefly and only in a cryptographically hashed (non-reversible) form to apply rate limiting and protect the service against abuse; this record is automatically deleted within a few minutes. The city name you enter is processed the same way: it is stored on the backend only as a cryptographically hashed (non-reversible) cache key, used solely to avoid repeating the same request to the third-party weather provider, and is never stored in a form that could be read back as the city you typed.</p>
+<br>
+<h3><strong>Device Permissions Required</strong></h3>
+<p>To function properly as a reliable alarm clock, the Application requires the following system permissions. The Service Provider only uses these permissions to provide the core functionality of the app, and no personal data from them is ever collected, stored, or transmitted:</p>
+<ul>
+  <li>Exact Alarm (SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM): Required to trigger your alarms precisely at the exact second you have set them.</li>
+  <li>Notification Permission: Required to display the active alarm status in your status bar and to trigger alerts.</li>
+  <li>Battery Optimization Settings: The app opens the system's battery optimization list so you can manually exclude it, preventing the Android OS from putting the app to sleep and ensuring that your alarms will ring reliably even if the device is in deep sleep.</li>
+  <li>System Alert Window / Draw Over Other Apps: Required to display the full-screen alarm dismiss interface over your lock screen or other running Applications when an alarm goes off, and to display the bedtime reminder popup at your configured bedtime.</li>
+  <li>Full-Screen Intent (USE_FULL_SCREEN_INTENT): Required to launch the alarm-ringing screen directly over your lock screen when an alarm fires, so you see it immediately instead of only a notification.</li>
+  <li>Foreground Service (FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK): Required to keep the alarm sound playing reliably in the background while the alarm is ringing.</li>
+  <li>Receive Boot Completed (RECEIVE_BOOT_COMPLETED): Required to automatically re-schedule your alarms after your device restarts, so they continue to work without you needing to reopen the app.</li>
+</ul>
+<br>
+<h3><strong>Cookies and tracking technologies</strong></h3>
+<p>The Application or its third-party SDKs may use cookies, SDKs, pixels, device identifiers, and similar technologies to support functionality, analytics, service delivery, and advertising. Where required by applicable law (such as in the European Economic Area), the Service Provider will obtain consent before using non-essential tracking technologies.</p>
+<br>
+<h3><strong>Your Rights</strong></h3>
+<p>Depending on your location, you may have the right to:</p>
+<p>* Access your personal data</p>
+<p>* Request correction or deletion</p>
+<p>* Object to or restrict processing</p>
+<p>* Withdraw consent at any time</p>
+<p>* Request data portability</p>
+<p>To exercise your rights, contact: <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a></p>
+<br>
+<h3><strong>Your California privacy rights (CCPA/CPRA)</strong></h3>
+<p>If you are a California resident, you have the right to know what personal information is collected, the right to delete personal information, the right to opt out of the sale or sharing of personal information, and the right to non-discrimination for exercising these rights. To exercise your CCPA/CPRA rights, contact the Service Provider at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
+<p>The Service Provider does not sell personal information as defined under CCPA/CPRA.</p>
+<p>The Service Provider does not send you marketing communications. If you contact the Service Provider directly (for example, by email), your message and any information you provide will be used only to respond to your inquiry.</p>
+<br>
+<h3><strong>Third Party Access</strong></h3>
+<p>The Application uses third-party services that may collect, process, and store information in accordance with their own privacy policies. These services include:</p>
+<ul>
+  <li>
+    <p>HUAWEI AGConnect Core / HiAnalytics</p>
+  </li>
+  <li>
+    <p>HUAWEI Ads Kit</p>
+  </li>
+  <li>
+    <p>OpenWeatherMap</p>
+  </li>
+  <li>
+    <p>WeatherAPI.com (fallback weather source, used only when OpenWeatherMap is temporarily unavailable)</p>
+  </li>
+  <li>
+    <p>NewsData.io</p>
+  </li>
+  <li>
+    <p>Frankfurter API</p>
+  </li>
+  <li>
+    <p>Google Cloud Platform (the Service Provider's own backend infrastructure, including Firestore and Cloud Functions)</p>
+  </li>
+  <li>
+    <p>The Conversation (RSS news source)</p>
+  </li>
+  <li>
+    <p>Global Voices (RSS news source)</p>
+  </li>
+</ul>
+<p>These third parties may collect data such as device identifiers, usage data, and diagnostic information.</p>
+<p>Advertising providers such as HUAWEI Ads Kit may use advertising identifiers and similar technologies to display personalized or non-personalized ads, depending on your location and consent choices (where required by law, such as in the EEA/UK).</p>
+<br>
+<h3><strong>Data Sharing</strong></h3>
+<p>The Service Provider does not sell your personal data. Information may be shared with third-party Service Providers strictly for the following purposes:</p>
+<ul>
+  <li>Analytics and usage measurement</li>
+  <li>Advertising and monetization</li>
+  <li>Crash reporting and diagnostics</li>
+  <li>Service improvement</li>
+  <li>Providing weather, air quality, currency, and news content relevant to your settings</li>
+</ul>
+<br>
+<h3><strong>International Data Transfers</strong></h3>
+<p>The Service Provider or its third-party Service Providers may transfer personal data to countries outside your country of residence, including outside the European Economic Area (EEA). Where applicable law requires safeguards for international transfers, the Service Provider will use appropriate mechanisms.</p>
+<ul>
+  <li>Standard Contractual Clauses (SCCs) approved by the European Commission</li>
+  <li>Adequacy decisions or other legally recognized transfer mechanisms</li>
+  <li>Your consent, where required and legally permitted</li>
+</ul>
+<p>Data protection laws in other countries may differ from those in your jurisdiction. Where required by law, the Service Provider will apply appropriate safeguards and obtain any consent required for the transfer.</p>
+<p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. For more information about how these third-party services handle data, please refer to their respective privacy policies below:</p>
+<ul>
+  <li>
+    <p><a href="https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707">HUAWEI AGConnect Core / HiAnalytics</a></p>
+  </li>
+  <li>
+    <p><a href="https://developer.huawei.com/consumer/en/doc/development/hmscore-common-Guides/privacy-0000001261262707">HUAWEI Ads Kit</a></p>
+  </li>
+  <li>
+    <p><a href="https://openweathermap.org/privacy-policy">OpenWeatherMap</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.weatherapi.com/privacy.aspx">WeatherAPI.com</a></p>
+  </li>
+  <li>
+    <p><a href="https://newsdata.io/privacy-policy">NewsData.io</a></p>
+  </li>
+  <li>
+    <p>Frankfurter (an open, non-commercial exchange rate API operated using European Central Bank reference data; it does not collect or process personal data and does not publish a separate consumer privacy policy)</p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Platform</a></p>
+  </li>
+  <li>
+    <p><a href="https://theconversation.com/us/privacy-policy">The Conversation</a></p>
+  </li>
+  <li>
+    <p><a href="https://globalvoices.org/privacy/">Global Voices</a></p>
+  </li>
+</ul>
+<br>
+<h3><strong>Data Disclosure</strong></h3>
+<p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+<ul>
+  <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
+  <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+  <li>with their trusted services providers who work on their behalf, do not have an independent use of the information the Service Provider discloses to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+</ul>
+<br>
+<h3><strong>Opt-Out Rights</strong></h3>
+<p>You can stop further collection of information from your mobile device by uninstalling the Application. Uninstalling will stop the Application from collecting data from your device, but it does not automatically delete information that has already been transmitted to the Service Provider or to third parties.</p>
+<br>
+<h3><strong>Data Retention Policy</strong></h3>
+<p>The Service Provider retains personal data based on its necessity for the stated purposes:</p>
+<ul>
+  <li>Automatically Collected Data: Retention periods may vary depending on the third-party Service Providers used by the Application</li>
+  <li>Diagnostic and crash data: retained as needed to improve Application stability</li>
+  <li>Aggregated or de-identified data: May be retained for longer periods</li>
+  <li>Data required for legal compliance: Retained as long as required by applicable law</li>
+</ul>
+<p>If any user-provided data is ever collected, it will be retained only for as long as necessary for its intended purpose, unless a longer retention period is required by law.</p>
+<br>
+<h3><strong>Children's Privacy</strong></h3>
+<p>The Application is not directed to children under the age of 13. In jurisdictions where a higher minimum age is required (such as the European Economic Area), the Application is not intended for users below that age unless appropriate consent has been obtained.</p>
+<p>The Service Provider does not knowingly solicit data from children or market the Application to them.</p>
+<p>Where parental or guardian consent is required under applicable law, the Application is not intended for use without that consent.</p>
+<p>While the Application does not directly request personal information (such as name, email address, or phone number), certain data (such as device identifiers and usage data) may be collected automatically by third-party services (e.g., analytics and advertising tools).</p>
+<p>In the event the Service Provider discovers that a child has provided personal information, the Service Provider will immediately delete this.</p>
+<p>If you are a parent or guardian and you are aware that your child has provided the Service Provider with personal information, please contact the Service Provider at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a> so that they will be able to take the necessary actions.</p>
+<br>
+<h3><strong>Security</strong></h3>
+<p>The Service Provider implements reasonable technical and organizational measures to protect your information.</p>
+<br>
+<h3><strong>Data Breach Notification</strong></h3>
+<p>If a data breach occurs that affects your personal data, the Service Provider will notify you in accordance with applicable legal requirements, including, where required, providing information about the nature of the breach and the steps being taken to address it.</p>
+<br>
+<h3><strong>Changes</strong></h3>
+<p>The Service Provider may update this Privacy Policy from time to time. The Service Provider will notify you of material changes by posting the updated Privacy Policy with an effective date. Where required by law, the Service Provider will seek your consent to material changes before they take effect.</p>
+<p>Previous versions of this Privacy Policy will be maintained and made available upon request by contacting the Service Provider at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
+<br>
+<h3><strong>Your Consent</strong></h3>
+<p>Where processing is based on consent, you provide that consent by affirmatively opting in to the relevant feature or action. You may withdraw consent at any time without affecting processing carried out before withdrawal. Processing based on other lawful bases is carried out as described above.</p>
+<br>
+<h3><strong>Contact Us</strong></h3>
+<p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a href="mailto:wonderalarm.support@gmail.com">wonderalarm.support@gmail.com</a>.</p>
+<br>
+<h3><strong>Effective date</strong></h3>
+<p>This privacy policy is effective as of 2026-10-5</p>
+</div>
+
+<script>
+  // Mode 1: PIPL applies (mainland China) - toggle between the Chinese and English PIPL text.
+  function setPiplLang(lang) {
+    document.getElementById('content-zh').style.display = (lang === 'zh') ? 'block' : 'none';
+    document.getElementById('content-en-pipl').style.display = (lang === 'en') ? 'block' : 'none';
+    document.getElementById('content-en-general').style.display = 'none';
+    document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.querySelector('.lang-switch').style.display = 'flex';
+    document.documentElement.lang = lang;
+  }
+
+  // Mode 2: PIPL does not apply (outside mainland China) - general English policy, no toggle.
+  function setGeneralMode() {
+    document.getElementById('content-zh').style.display = 'none';
+    document.getElementById('content-en-pipl').style.display = 'none';
+    document.getElementById('content-en-general').style.display = 'block';
+    document.querySelector('.lang-switch').style.display = 'none';
+    document.documentElement.lang = 'en';
+  }
+
+  (function () {
+    // Safe default while location is being determined (and if detection fails): the Chinese
+    // PIPL text, since that is the content Huawei has already reviewed and approved for this URL.
+    setPiplLang('zh');
+
+    var controller = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+    var timeoutId = setTimeout(function () { if (controller) controller.abort(); }, 4000);
+
+    fetch('https://ipapi.co/json/', controller ? { signal: controller.signal } : {})
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        clearTimeout(timeoutId);
+        var country = (data && data.country_code) ? String(data.country_code).toUpperCase() : null;
+        if (country && country !== 'CN') {
+          setGeneralMode();
+        } else {
+          // Mainland China, or country could not be determined from a successful response:
+          // keep PIPL mode, just pick the sub-language from the browser's own setting.
+          var navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+          setPiplLang(navLang.indexOf('zh') === 0 ? 'zh' : 'en');
+        }
+      })
+      .catch(function () {
+        clearTimeout(timeoutId);
+        // Geo-IP lookup failed or timed out - keep the safe default (Chinese PIPL text) already set above.
+      });
+  })();
+</script>
+
+</body>
+</html>
